@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- https://developers.google.com/fonts/docs/getting_started -->
+<link rel="stylesheet" type="text/css" href="app/styles/css/app.css" media="all" />
+<!-- https://stackoverflow.com/questions/31075893/im-getting-favicon-ico-error -->
+<link rel="shortcut icon" href="#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-control" content="public">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- https://support.google.com/webmasters/thread/6664618?hl=en -->
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content#Cross-origin_fetches -->
+  <link rel="preload" href="app/styles/fonts/Montserrat-Light.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="app/styles/fonts/Montserrat-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="app/styles/fonts/Montserrat-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <!-- https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup -->
+  <link rel="icon" href="./app/images_doc/favicon.ico">
+  <title>Portfolio~</title>
+</head>
+
+<body>
+  <div id="root">
+
+  </div>
+</body>
+
+<script async src="app/scripts/js/bundle.js" charset="utf-8"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122351635-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122351635-1');
+</script>
+</html>
